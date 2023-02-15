@@ -19,26 +19,26 @@ const basket = {
     buttonTitle: "Buy",
   },
   items: {
-    title: "Itens da cesta",
+    title: "Basket items",
     list: [
       {
-        name: "Tomate",
+        name: "Tomato",
         image: tomate,
       },
       {
-        name: "Brócolis",
+        name: "Broccoli",
         image: brocolis,
       },
       {
-        name: "Batata",
+        name: "Potato",
         image: batata,
       },
       {
-        name: "Pepino",
+        name: "Cucumber",
         image: pepino,
       },
       {
-        name: "Abóbora",
+        name: "Pumpkin",
         image: abobora,
       }
     ]

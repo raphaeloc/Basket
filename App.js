@@ -16,7 +16,7 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar backgroundColor="#5E8D48" barStyle="dark-content" /> 
       <Basket {...mock} />
     </SafeAreaView>
