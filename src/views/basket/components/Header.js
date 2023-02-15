@@ -6,9 +6,9 @@ import MontserratText from '../../../components/MontserratText'
 
 const width = Dimensions.get('screen').width
 
-export default function Header() {
+export default function Header({ title }) {
     return <>
-        <MontserratText style={styles.title}>Details of basket</MontserratText>
+        <MontserratText style={styles.title}>{title}</MontserratText>
         <Image source={headerImage} style={styles.headerImage} />
     </>
 }

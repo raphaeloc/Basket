@@ -3,19 +3,23 @@ import { View, Image, StyleSheet } from "react-native"
 import MontserratText from "../../../components/MontserratText"
 import logo from '../../../../assets/logo.png'
 
-export default function Details() {
+export default function Details({ 
+    name,
+    farmLogo,
+    farmName,
+    description,
+    price 
+}) {
     return <>
-        <MontserratText style={styles.name}>Basket of vegetables</MontserratText>
+        <MontserratText style={styles.name}>{name}</MontserratText>
 
         <View style={styles.farm}>
-            <Image style={styles.farmImage} source={logo} />
-            <MontserratText style={styles.farmName}>Raphael Chagas Farm</MontserratText>
+            <Image style={styles.farmImage} source={farmLogo} />
+            <MontserratText style={styles.farmName}>{farmName}</MontserratText>
         </View>
 
-        <MontserratText style={styles.description}>
-            A basket with carefully selected products from the farm straight to your kitchen
-        </MontserratText>
-        <MontserratText style={styles.price}>R$40,00</MontserratText>
+        <MontserratText style={styles.description}>{description}</MontserratText>
+        <MontserratText style={styles.price}>{price}</MontserratText>
     </>
 }
 

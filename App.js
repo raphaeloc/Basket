@@ -3,6 +3,8 @@ import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from "@expo-googl
 
 import Basket from './src/views/basket/Basket';
 
+import mock from './src/mocks/basket'
+
 export default function App() {
   const [fontLoaded] = useFonts({
     'MontserratRegular': Montserrat_400Regular,
@@ -16,7 +18,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar backgroundColor="#5E8D48" barStyle="dark-content" /> 
-      <Basket />
+      <Basket {...mock} />
     </SafeAreaView>
   );
 }
