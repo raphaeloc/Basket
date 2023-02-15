@@ -2,6 +2,7 @@ import React from "react"
 import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
 import MontserratText from "../../../components/MontserratText"
 import logo from '../../../../assets/logo.png'
+import DefaultButton from "../../../components/DefaultButton"
 
 export default function Details({ 
     name,
@@ -22,9 +23,7 @@ export default function Details({
         <MontserratText style={styles.description}>{description}</MontserratText>
         <MontserratText style={styles.price}>{price}</MontserratText>
 
-        <TouchableOpacity style={styles.button} onPress={() => {}}>
-            <MontserratText style={styles.buttonText}>{buttonTitle}</MontserratText>
-        </TouchableOpacity>
+        <DefaultButton buttonTitle={buttonTitle}/>
     </>
 }
 
@@ -60,18 +59,5 @@ const styles = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8
-    },
-    button: {
-        marginTop: 16,
-        backgroundColor: '#2A9F85',
-        paddingVertical: 16,
-        borderRadius: 6
-    },
-    buttonText: {
-        textAlign: 'center',
-        color: '#FFF',
-        fontSize: 16,
-        lineHeight: 26,
-        fontWeight: 'bold'
     }
 })
