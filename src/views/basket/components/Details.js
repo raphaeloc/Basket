@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Image, StyleSheet } from "react-native"
+import { View, Image, StyleSheet, TouchableOpacity } from "react-native"
 import MontserratText from "../../../components/MontserratText"
 import logo from '../../../../assets/logo.png'
 
@@ -8,7 +8,8 @@ export default function Details({
     farmLogo,
     farmName,
     description,
-    price 
+    price,
+    buttonTitle
 }) {
     return <>
         <MontserratText style={styles.name}>{name}</MontserratText>
@@ -20,6 +21,10 @@ export default function Details({
 
         <MontserratText style={styles.description}>{description}</MontserratText>
         <MontserratText style={styles.price}>{price}</MontserratText>
+
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+            <MontserratText style={styles.buttonText}>{buttonTitle}</MontserratText>
+        </TouchableOpacity>
     </>
 }
 
@@ -55,5 +60,18 @@ const styles = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8
+    },
+    button: {
+        marginTop: 16,
+        backgroundColor: '#2A9F85',
+        paddingVertical: 16,
+        borderRadius: 6
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: '#FFF',
+        fontSize: 16,
+        lineHeight: 26,
+        fontWeight: 'bold'
     }
 })

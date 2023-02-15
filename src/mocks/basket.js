@@ -16,7 +16,7 @@ const basket = {
     farmName: "Raphael Chagas Farm",
     description: "A basket with carefully selected products from the farm straight to your kitchen",
     price: "R$ 40,00",
-    button: "Buy",
+    buttonTitle: "Buy",
   },
   items: {
     title: "Itens da cesta",
