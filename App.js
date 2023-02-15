@@ -10,7 +10,7 @@ export default function App() {
   })
 
   if (!fontLoaded) {
-    return <View />
+    return null
   }
 
   return (
